@@ -1,10 +1,10 @@
-import { NextStudio } from 'next-sanity/studio'
-import { metadata } from 'next-sanity/studio/metadata'
-import config from '../../../sanity.config'
+'use client';
 
-// Optimize the studio loading
-export { metadata }
+import dynamic from 'next/dynamic';
+
+// Dynamically import the Studio component with SSR disabled
+const Studio = dynamic(() => import('@/components/Studio'), { ssr: false });
 
 export default function StudioPage() {
-    return <NextStudio config={config} />
+    return <Studio />;
 }
