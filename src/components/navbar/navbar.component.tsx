@@ -98,7 +98,7 @@ export default function NavbarComponent() {
                   animate="show"
                   exit="exit"
                   transition={{
-                    type: "just",
+                    type: "spring",
                     delay: 0.2,
                   }}
                   className="bg-white p-6 pt-32 grid grid-cols-2 gap-10 fixed right-0 top-0 min-h-screen align-top opacity-100 z-[2] overflow-auto sm:w-screen sm:px-[15%] sm:grid-cols-1"
@@ -196,7 +196,7 @@ function NavLinksComponent({
   target,
   handleClick,
 }: {
-  whileHover: object;
+  whileHover: any;
   mouseOptions: MouseSettings;
   to: string;
   text: string;
@@ -218,7 +218,7 @@ function NavSocialsComponent({
   text,
   href,
 }: {
-  whileHover: object;
+  whileHover: any;
   mouseOptions: MouseSettings;
   text: string;
   href: string;
