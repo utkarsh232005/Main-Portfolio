@@ -1,0 +1,4 @@
+Sitemap: https://adnansh.in/sitemap.xml
+
+User-Agent: *
+Disallow: /admin
